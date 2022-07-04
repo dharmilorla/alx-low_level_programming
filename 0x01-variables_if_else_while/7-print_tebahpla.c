@@ -13,6 +13,6 @@ while (letter >= 'a')
 putchar(letter);
 letter--;
 }
-pitchar('\n');
+putchar('\n');
 return (0);
 }
