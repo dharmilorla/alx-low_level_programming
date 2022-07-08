@@ -7,6 +7,7 @@
  */
 
 int main(void)
+
 {
 	int ch;
 	int n;
