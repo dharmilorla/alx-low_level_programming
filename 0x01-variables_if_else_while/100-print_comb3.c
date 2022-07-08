@@ -1,30 +1,57 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+
 /**
- * main - writes 00 - 99
- * Description: write unique combination
- * Return: 0 on success
+ * main -> assign a random number to the variable n each time it is executed
+ * and print the last digit of the number stored in the variable n
+ * Return: Always 0 (Success)
  */
+
 int main(void)
+
 {
-int i, j;
-for (i = '0'; i <= '9'; i++)
-{
-for (j = '0'; j <= '9'; j++)
-{
-if ((i < j) & (j <= '0'))
-{
-putchar(i);
-putchar(j);
-if ((j < '9') | (i < '8'))
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-putchar('\n');
-return (0);
+
+	int ch;
+
+	int n;
+
+	for (ch = 48; ch <= 57; ch++)
+
+	{
+
+		for (n = 49; n <= 57; n++)
+
+		{
+
+			if (n > ch)
+
+			{
+
+				putchar(ch);
+
+				putchar(n);
+
+				if (ch != 56 || n != 57)
+
+				{
+
+					putchar(44);
+
+					putchar(32);
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+
+	putchar(10); /* this is an ascii code for new line*/
+
+
+
+	return (0);
+
 }
